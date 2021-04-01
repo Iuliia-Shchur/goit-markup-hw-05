@@ -249,6 +249,7 @@ img {
 
 /* Modal */
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -264,6 +265,7 @@ img {
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
 }
 
 .backdrop.is-hidden .modal {
@@ -363,6 +365,7 @@ img {
 .about-item-thumb {
   position: relative;
 }
+
 .about-item-thumb-text {
   position: absolute;
   bottom: 0;
